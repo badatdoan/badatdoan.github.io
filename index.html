@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384- fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="app">
+        <header class="app__header">
+            <div class="grid">
+                <div class="header__navbar">
+                    <div class="header__logo">
+                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/logo.png" alt="" class="header__logo-img">
+                    </div>
+                    <ul class="header__navbar-list">
+                       
+                        
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">HOME</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">PACKAGES</a>
+                           
+                            <ul class="header__navbar-item-list header__navbar-item-list--packages">
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Search 1</a>
+                                    <button class="header__navbar-item-item__btn">
+                                        Hot
+                                    </button>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Search 2</a>
+                                </li>
+                                <li class="header__navbar-item-item header__navbar-item-item--active">
+                                    <a href="" class="header__navbar-item-item__link">
+                                        Tour Package
+                                    </a>
+                                  
+                                    
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Destination</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Typology</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">SHOP</a>
+                            <ul class="header__navbar-item-list header__navbar-item-list--shop">
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Archive</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Single Product</a>
+                                </li>
+                                <li class="header__navbar-item-item header__navbar-item-item--active">
+                                    <a href="" class="header__navbar-item-item__link">
+                                        Cart
+                                    </a>
+                                  
+                                    
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Checkout</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                       <!--  <ul class="header__navbar-item-item-list">
+                            <li class="header__navbar-item-item-list-item">
+                                <a href="" class="header__navbar-item-item-list-item-link">Carousel</a>
+                                <button class="header__navbar-item-item-list-item__btn">
+                                    Best
+                                </button>
+                            </li>
+                            <li class="header__navbar-item-item-list-item">
+                                <a href="" class="header__navbar-item-item-list-item-link">Custom Map</a>
+                            </li>
+                            <li class="header__navbar-item-item-list-item">
+                                <a href="" class="header__navbar-item-item-list-item-link">360o Panorama</a>
+                            </li>
+                            <li class="header__navbar-item-item-list-item">
+                                <a href="" class="header__navbar-item-item-list-item-link">Default</a>
+                            </li>
+                        </ul> -->
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">ABOUT US</a>
+                            <ul class="header__navbar-item-list header__navbar-item-list--about">
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">About us</a>
+                                    <button class="header__navbar-item-item__btn--new">
+                                        New
+                                    </button>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">About us 2</a>
+                                </li>
+                                <li class="header__navbar-item-item header__navbar-item-item--active">
+                                    <a href="" class="header__navbar-item-item__link">
+                                        About us 3
+                                    </a>
+                                </li>
+                                
+                               
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">PAGES</a>
+                            <ul class="header__navbar-item-list header__navbar-item-list--pages">
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Services</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Agency Tours</a>
+                                </li>
+                                <li class="header__navbar-item-item header__navbar-item-item--active">
+                                    <a href="" class="header__navbar-item-item__link">
+                                        Testimonials
+                                    </a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Prices</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Promotions</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Faq</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Coming soon</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">About us</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Contact</a>
+                                </li>
+                               
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">NEWS</a>
+                            <ul class="header__navbar-item-list header__navbar-item-list--news">
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Archive</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Single Post</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">CONTACTS</a>
+                            <ul class="header__navbar-item-list header__navbar-item-list--contact">
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Contact 1</a>
+                                </li>
+                                <li class="header__navbar-item-item">
+                                    <a href="" class="header__navbar-item-item__link">Contact 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link">BOOK NOW</a>
+                        </li>
+                    </ul>
+
+                    <div class="header__bars">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+           
+            
+            </div>
+
+        </header>
+
+        <div class="slider">
+            <div class="slider-text-content">
+                <p class="slider-text-heading">Search your next Holiday</p>
+                <p class="slider-text-body">
+                    Check our best promotion
+                </p>
+                <div class="slider__input">
+                    <input type="text" class="slider__input-input" placeholder="Choose your destination ...">
+                    <div class="slider__input-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+               
+                <div class="slider-category">
+                    <a href="#" class="slider-category-item">
+                        <div class="slider-category-item__content">
+                            <i class="slider-category-item__icon fas fa-cocktail"></i>
+                            <p class="slide-category__text">
+                                Relax
+                            </p>
+                        </div>
+                      
+                    </a>
+
+                    <a href="#" class="slider-category-item">
+                        <div class="slider-category-item__content">
+                            <i class="slider-category-item__icon fas fa-theater-masks"></i>
+                            <p class="slide-category__text">
+                                Cultural
+                            </p>
+                        </div>
+                      
+                    </a>
+
+                    <a href="#" class="slider-category-item">
+                        <div class="slider-category-item__content">
+                            <i class="slider-category-item__icon fas fa-campground"></i>
+                            <p class="slide-category__text">
+                                Sport
+                            </p>
+                        </div>
+                      
+                    </a>
+
+                    <a href="#" class="slider-category-item">
+                        <div class="slider-category-item__content">
+                            <i class="slider-category-item__icon fas fa-camera-retro"></i>
+                            <p class="slide-category__text">
+                                History
+                            </p>
+                        </div>
+                       
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="app__container">
+            <div class="grid">
+                <div class="app__container-header">
+                    <div class="app__container-header-heading">OUR PROPOSALS</div>
+                    <div class="app__container-header-content">
+                        OUR 
+                        <div class="app__container-header-content--underlined">
+                            DESTINATION
+                          
+                        </div>
+                        <div class="app__container-header-content--underline"></div>
+                       
+                    </div>
+                   
+                </div>
+
+                <div class="app__container-body">
+                    <div class="grid__row">
+                        <div class="travel-list">
+                            <div class="travel-item">
+                                <img src="https://www.travelagewest.com/uploadedImages/All_Gateways/River_Cruise/Features/RiverCruisingRestart_Hero_TAW032221.jpg?width=1008&height=567&scale=both&mode=crop" alt="" class="travel-item-img">
+                                <div class="travel-item__content">
+                                    <div class="travel-item-heading">Europe</div>
+                                    <div class="travel-item-body">3 PACKAGES</div>
+                                    <div class="travel-item-body-layer">
+                                        <div class="travel-item-body-layer__heading">
+                                            <p class="travel-item-body-layer__heading-text">Packages</p> 
+                                        </div>
+                                        <div class="travel-item-body-layer__body">
+                                            <div class="travel-item-body-layer__body-content">
+                                                <div class="travel-item-body-layer__body-content-text">Berlin</div>
+                                                <div class="travel-item-body-layer__body-content-text">Amsterdam</div>
+                                                <div class="travel-item-body-layer__body-content-text">Tuscany</div>
+                                            </div>
+                                            <button class="travel-item-body-layer__body-btn">
+                                                VIEW DESTINATION
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="travel-item">
+                                <img src="https://vcdn1-dulich.vnecdn.net/2019/04/24/KinderdijkHLanVnexpress-155609-7417-5041-1556095223.jpg?w=900&h=540&q=100&dpr=1&fit=crop&s=Kf_tDB5az1zaWhP-vLHQag" alt="" class="travel-item-img">
+                                <div class="travel-item__content">
+                                    <div class="travel-item-heading">Netherlands</div>
+                                    <div class="travel-item-body">3 PACKAGES</div>
+                                    <div class="travel-item-body-layer">
+                                        <div class="travel-item-body-layer__heading">
+                                            <p class="travel-item-body-layer__heading-text">Packages</p> 
+                                        </div>
+                                        <div class="travel-item-body-layer__body">
+                                            <div class="travel-item-body-layer__body-content">
+                                                <div class="travel-item-body-layer__body-content-text">Berlin</div>
+                                                <div class="travel-item-body-layer__body-content-text">Amsterdam</div>
+                                                <div class="travel-item-body-layer__body-content-text">Tuscany</div>
+                                            </div>
+                                            <button class="travel-item-body-layer__body-btn">
+                                                VIEW DESTINATION
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="travel-item">
+                                <img src="https://images.unsplash.com/photo-1512273222628-4daea6e55abb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bW91bnRhaW4lMjBzbm93fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="" class="travel-item-img">
+                                <div class="travel-item__content">
+                                    <div class="travel-item-heading">Asia</div>
+                                    <div class="travel-item-body">3 PACKAGES</div>
+                                    <div class="travel-item-body-layer">
+                                        <div class="travel-item-body-layer__heading">
+                                            <p class="travel-item-body-layer__heading-text">Packages</p> 
+                                        </div>
+                                        <div class="travel-item-body-layer__body">
+                                            <div class="travel-item-body-layer__body-content">
+                                                <div class="travel-item-body-layer__body-content-text">Berlin</div>
+                                                <div class="travel-item-body-layer__body-content-text">Amsterdam</div>
+                                                <div class="travel-item-body-layer__body-content-text">Tuscany</div>
+                                            </div>
+                                            <button class="travel-item-body-layer__body-btn">
+                                                VIEW DESTINATION
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="travel-list">
+                            <div class="travel-item">
+                                <img src="https://i-dulich.vnecdn.net/2018/10/27/home-venice-italy_680x0.jpg" alt="" class="travel-item-img">
+                                <div class="travel-item__content">
+                                    <div class="travel-item-heading">Italy</div>
+                                    <div class="travel-item-body">2 PACKAGES</div>
+                                    <div class="travel-item-body-layer">
+                                        <div class="travel-item-body-layer__heading">
+                                            <p class="travel-item-body-layer__heading-text">Packages</p> 
+                                        </div>
+                                        <div class="travel-item-body-layer__body">
+                                            <div class="travel-item-body-layer__body-content">
+                                                <div class="travel-item-body-layer__body-content-text">Berlin</div>
+                                                <div class="travel-item-body-layer__body-content-text">Amsterdam</div>
+                                                <div class="travel-item-body-layer__body-content-text">Tuscany</div>
+                                            </div>
+                                            <button class="travel-item-body-layer__body-btn">
+                                                VIEW DESTINATION
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="travel-item">
+                                <img src="https://www.gelestatic.it/thimg/J5s9ArAjAm2d1R3eU5rdbsaOVGM=/fit-in/960x540/https%3A//www.lastampa.it/image/contentid/policy%3A1.40079202%3A1616830861/jetty-1807471_1280.jpeg%3Ff%3Ddetail_558%26h%3D720%26w%3D1280%26%24p%24f%24h%24w%3D31075dd" alt="" class="travel-item-img">
+                                <div class="travel-item__content">
+                                    <div class="travel-item-heading">Thailandia</div>
+                                    <div class="travel-item-body">3 PACKAGES</div>
+                                    <div class="travel-item-body-layer">
+                                        <div class="travel-item-body-layer__heading">
+                                            <p class="travel-item-body-layer__heading-text">Packages</p> 
+                                        </div>
+                                        <div class="travel-item-body-layer__body">
+                                            <div class="travel-item-body-layer__body-content">
+                                                <div class="travel-item-body-layer__body-content-text">Berlin</div>
+                                                <div class="travel-item-body-layer__body-content-text">Amsterdam</div>
+                                                <div class="travel-item-body-layer__body-content-text">Tuscany</div>
+                                            </div>
+                                            <button class="travel-item-body-layer__body-btn">
+                                                VIEW DESTINATION
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="travel-item">
+                                <img src="https://image.freepik.com/free-photo/view-golden-gate-bridge-san-francisco_65103-551.jpg" alt="" class="travel-item-img">
+                                <div class="travel-item__content">
+                                    <div class="travel-item-heading">United States</div>
+                                    <div class="travel-item-body">3 PACKAGES</div>
+                                    <div class="travel-item-body-layer">
+                                        <div class="travel-item-body-layer__heading">
+                                            <p class="travel-item-body-layer__heading-text">Packages</p> 
+                                        </div>
+                                        <div class="travel-item-body-layer__body">
+                                            <div class="travel-item-body-layer__body-content">
+                                                <div class="travel-item-body-layer__body-content-text">Berlin</div>
+                                                <div class="travel-item-body-layer__body-content-text">Amsterdam</div>
+                                                <div class="travel-item-body-layer__body-content-text">Tuscany</div>
+                                            </div>
+                                            <button class="travel-item-body-layer__body-btn">
+                                                VIEW DESTINATION
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+            <div class="holiday">
+                <div class="holiday-img-container">
+                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/parallax-12.jpg" alt="" class="holiday-img">
+                    <div class="holiday-img-container-text">
+                        <div class="hodiay-img-container-text-heading">Your</div>
+                        <div class="hodiay-img-container-text-body">
+                            Next Holiday
+                        </div>
+                        <div class="underline"></div>
+                    </div>
+                    <button class="holiday-btn">VIEW ALL PACKAGES</button>
+                </div>
+                
+            </div>
+            <div class="container-book">
+                <div class="grid">
+                    <div class="container-book-text">
+                        <div class="container-book-text-header">
+                            <div class="container-book-text-header-heading">NORTH AMERICA</div>
+                            <div class="container-book-text-header-body">The Best Beaches</div>
+                        </div>
+                        <div class="container-book-text-header-body-underline"></div>
+                        <div class="container-book-text-body">
+                            <div class="container-book-text-body-text">
+                                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                            </div>
+
+                            <div class="container-book-text-body-text">
+                                Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie ultricies mauris ac.
+                            </div>
+                        </div>
+                        <div class="container-book-text-price">
+                            <div class="container-book-text-price-old">800</div>
+                            <div class="container-book-text-price-new">500 $</div>
+                            <div class="container-book-text-price-per">/ FOR PERSON</div>
+                        </div>
+                        <button class="container-book-text-price-btn">BOOK NOW</button>
+                        <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2018/09/Ho-Coc-Beach.jpg" alt="" class="container-book-text-img">
+                        
+                        <div class="container-book-text-img-daybook-crossbar">
+                            <div class="container-book-text-img-daybook-crossbar-item"></div>
+                            <div class="container-book-text-img-daybook-crossbar-item"></div>
+                            <div class="container-book-text-img-daybook-crossbar-item"></div>
+                        </div>
+                        <div class="container-book-text-img-daybook">
+                           
+                            <div class="container-book-text-img-day">
+                                <div class="container-book-text-img-day-content">
+                                    <div class="container-book-text-img-day-heading">000</div>
+                                    <div class="container-book-text-img-day-body">DAYS</div>
+                                </div>
+                                <div class="container-book-text-img-day-body--seperate">/</div>
+
+                                <div class="container-book-text-img-day-content">
+                                    <div class="container-book-text-img-day-heading">00</div>
+                                    <div class="container-book-text-img-day-body">HOURS</div>
+                                </div>
+                                <div class="container-book-text-img-day-body--seperate">/</div>
+
+                                <div class="container-book-text-img-day-content">
+                                    <div class="container-book-text-img-day-heading">00</div>
+                                    <div class="container-book-text-img-day-body">MINUTES</div>
+                                </div>
+                                <div class="container-book-text-img-day-body--seperate">/</div>
+
+                                <div class="container-book-text-img-day-content">
+                                    <div class="container-book-text-img-day-heading">00</div>
+                                    <div class="container-book-text-img-day-body">SECONDS</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+
+                
+            </div>
+
+            <div class="container-description">
+                <div class="grid">
+                    <div class="grid__row">
+                            <div class="container-description-item">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/04/icon-around.png" alt="" class="container-description-item-img">
+                                <div class="container-description-item-content">
+                                    <div class="container-description-item-heading">World Tour</div>
+                                    <div class="container-description-item-body">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
+                                    <div class="container-description-item-footer">View More</div>
+                                </div>
+                            </div>
+
+                            <div class="container-description-item">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/04/icon-boat.png" alt="" class="container-description-item-img">
+                                <div class="container-description-item-content">
+                                    <div class="container-description-item-heading">Cruises</div>
+                                    <div class="container-description-item-body">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
+                                    <div class="container-description-item-footer">View More</div>
+                                </div>
+                            </div>
+
+                            <div class="container-description-item">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/04/icon-landmark.png" alt="" class="container-description-item-img">
+                                <div class="container-description-item-content">
+                                    <div class="container-description-item-heading">Best Tour</div>
+                                    <div class="container-description-item-body">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</div>
+                                    <div class="container-description-item-footer">View More</div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-discover">
+                <div class="container-discover-item">
+                    <img src="./assets/img/parallax-5-filter.jpg" alt="" class="container-discover-item-img">
+                    <div class="container-discover-item-text">
+                        <div class="container-discover-item-text-heading">01. LAST MINUTE</div>
+                        <div class="container-discover-item-text-body">Discover Cities</div>
+                        <button class="container-discover-item-text-btn btn-first">DETAILS</button>
+                    </div>
+                </div>
+
+                <div class="container-discover-item">
+                    <img src="./assets/img/parallax-6-filter.jpg" alt="" class="container-discover-item-img">
+                    <div class="container-discover-item-text">
+                        <div class="container-discover-item-text-heading">02. PROMOTIONS</div>
+                        <div class="container-discover-item-text-body">Discover Nature</div>
+                        <button class="container-discover-item-text-btn btn-last">DETAILS</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-places">
+                <div class="container-places-header">
+                    <div class="app__container-header-heading">PROMOTIONS</div>
+                    <div class="app__container-header-content">
+                        OUR 
+                        <div class="app__container-header-content--underlined">
+                            PACKAGES
+                          
+                        </div>
+                        <div class="app__container-header-content--underline container-places-header--underlined"></div>
+                       
+                    </div>
+                </div>
+
+                <div class="container-places-body">
+                    <div class="grid">
+                        <div class="container-places-list">
+                            <div class="container-places-item">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-1-1024x640.jpg" alt="" class="container-places-item-img">
+                                <div class="container-places-item-circle container-places-item-circle-1">
+                                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/arch.png" alt="" class="container-places-item-circle-img">
+                                </div>
+                                <div class="container-places-content">
+                                    <div class="container-places-content-header">
+                                        <div class="container-places-content-header-heading">Berlin</div>
+                                        <div class="container-places-content-header-position">
+                                            <i class="fas fa-map-marker-alt container-places-content-header-position-icon"></i>
+                                            <div class="container-places-content-header-position-text">Europe</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-places-content-container">
+                                        <div class="container-places-content-container-heading">
+                                            <div class="container-places-content-container-heading-left">
+                                                <div class="container-places-content-container-heading-left-heading">CULTURAL</div>
+                                                <div class="container-places-content-container-heading-left-body">
+                                                    <div class="container-places-content-container-heading-left-body-text">RELAX</div>
+                                                    <button class="container-places-content-container-heading-left-body-btn btn-1">+1</button>
+                                                </div>
+                                            </div>
+                                            <div class="container-places-content-container-heading-right">
+                                                700$
+                                            </div>
+                                        </div>
+                                        <div class="container-places-content-container-body">
+                                            <div class="container-places-content-container-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                            </div>
+                                            <button class="container-places-content-container-body-btn btn-1">DETAILS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-places-item">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/package-6-1024x640.jpg" alt="" class="container-places-item-img">
+                                <div class="container-places-item-circle container-places-item-circle-2">
+                                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/torii-gate.png" alt="" class="container-places-item-circle-img">
+                                </div>
+                                <div class="container-places-content">
+                                    <div class="container-places-content-header">
+                                        <div class="container-places-content-header-heading">Hong Kong</div>
+                                        <div class="container-places-content-header-position">
+                                            <i class="fas fa-map-marker-alt container-places-content-header-position-icon"></i>
+                                            <div class="container-places-content-header-position-text">Asia</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-places-content-container">
+                                        <div class="container-places-content-container-heading">
+                                            <div class="container-places-content-container-heading-left">
+                                                <div class="container-places-content-container-heading-left-heading">CULTURAL</div>
+                                                <div class="container-places-content-container-heading-left-body">
+                                                    <div class="container-places-content-container-heading-left-body-text">RELAX</div>
+                                                    <button class="container-places-content-container-heading-left-body-btn btn-2">+1</button>
+                                                </div>
+                                            </div>
+                                            <div class="container-places-content-container-heading-right">
+                                                500$
+                                            </div>
+                                        </div>
+                                        <div class="container-places-content-container-body">
+                                            <div class="container-places-content-container-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                            </div>
+                                            <button class="container-places-content-container-body-btn btn-2">DETAILS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="container-places-item">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-2-1024x640.jpg" alt="" class="container-places-item-img">
+                                <div class="container-places-item-circle container-places-item-circle-3">
+                                    <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/golden-gate.png" alt="" class="container-places-item-circle-img">
+                                </div>
+                                <div class="container-places-content">
+                                    <div class="container-places-content-header">
+                                        <div class="container-places-content-header-heading">San Francisco</div>
+                                        <div class="container-places-content-header-position">
+                                            <i class="fas fa-map-marker-alt container-places-content-header-position-icon"></i>
+                                            <div class="container-places-content-header-position-text">United States</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="container-places-content-container">
+                                        <div class="container-places-content-container-heading">
+                                            <div class="container-places-content-container-heading-left">
+                                                <div class="container-places-content-container-heading-left-heading">CULTURAL</div>
+                                                <div class="container-places-content-container-heading-left-body">
+                                                    <div class="container-places-content-container-heading-left-body-text">RELAX</div>
+                                                    <button class="container-places-content-container-heading-left-body-btn btn-3">+1</button>
+                                                </div>
+                                            </div>
+                                            <div class="container-places-content-container-heading-right">
+                                                400$
+                                            </div>
+                                        </div>
+                                        <div class="container-places-content-container-body">
+                                            <div class="container-places-content-container-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.
+                                            </div>
+                                            <button class="container-places-content-container-body-btn btn-3">DETAILS</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+
+
+        </div>
+            
+
+            </div>
+        </div>
+        <div class="app__footer">
+            <div class="footer-header">
+                <div class="footer-header-heading">
+                    KEEP IN TOUCH
+                </div>
+                <div class="footer-header-body">
+                    <div class="footer-header-body-text">Travel with Us</div>
+                    <input type="text" class="footer-header-body-input">
+                    <button class="footer-header-body-btn">SEND</button>
+                </div>
+            </div>
+
+            <div class="footer-body">
+                <div class="grid">
+                    <div class="footer-body-content">
+                        <div class="footer-body-content-header">
+                            <div class="footer-body-content-header-left">
+                                <div class="footer-body-content-header-left-heading">
+                                    <div class="footer-body-content-header-logo">
+                                        <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/logo-color.png" alt="" class="footer-body-content-header-logo-img">
+                                    </div>
+                                </div>
+
+                                <div class="footer-body-content-header-left-body">
+                                    <div class="footer-body-content-header-left-body-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh condimentum venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
+                                    </div>
+
+                                    <div class="footer-body-content-header-left-body-icons">
+                                        <i class="fab fa-twitter footer-body-content-header-left-body-icon"></i>
+                                        <i class="fab fa-youtube footer-body-content-header-left-body-icon"></i>
+                                        <i class="fab fa-facebook-square footer-body-content-header-left-body-icon"></i>
+                                        <i class="fab fa-instagram footer-body-content-header-left-body-icon"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                            <div class="footer-body-content-header-right">
+                                <ul class="footer-body-content-header-right-list">
+                                    <li class="footer-body-content-header-right-item">
+                                        <div class="footer-body-content-header-right-item-heading">
+                                            OUR AGENCY
+                                        </div>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Services
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Insurance
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Agency
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Tourism
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Payment
+                                        </a>
+
+                                    </li>
+
+                                    <li class="footer-body-content-header-right-item">
+                                        <div class="footer-body-content-header-right-item-heading">
+                                            PARTNERS
+                                        </div>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Booking
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            RentalCar
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            HostelWorld
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Trivago
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            TripAdvisor
+                                        </a>
+
+                                    </li>
+
+                                    <li class="footer-body-content-header-right-item">
+                                        <div class="footer-body-content-header-right-item-heading">
+                                            LAST MINUTE
+                                        </div>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            London
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            California
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Indonesia
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Europe
+                                        </a>
+                                        <a href="#" class="footer-body-content-header-right-item-link">
+                                            <i class="fas fa-chevron-right footer-body-content-header-right-item-link-icon"></i>
+                                            Oceania
+                                        </a>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+                           
+                        </div>
+                        <div class="footer-body-footer">
+                            <div class="footer-body-footer-left">
+                                THE BEST WORDPRESS TRAVEL THEME
+                            </div>
+
+                            <div class="footer-body-footer-right">
+                                COPYRIGHT NICDARK THEMES 2018
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+                
+            </div>
+
+            
+        </div>
+        
+
+        <div class="modal">
+            <header class="modal-header">
+                <div class="modal-header__heading">BEST</div>
+                <div class="modal-header__content">
+                    PACKAGES
+                </div>
+                <div class="modal-header__content--underline"></div>
+            </header>
+            <button class="modal__button--delete">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-container-1">
+                <ul class="modal-container-1-list">
+                    <li class="modal-container-1-item">
+                        <a href="" class="modal-container-1-item-link">
+                            <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-1-150x150.jpg" alt="" class="modal-container-img">
+                            <div class="modal-container-1-info">
+                                <div class="modal-container-1-info-heading">Berlin</div>
+                                <div class="modal-container-1-info-body">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="modal-container-1-info-body-label">Europe</div>
+                                </div>
+                                <button class="modal-container-1-info-btn-1">FROM 700 $</button>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="modal-container-1-item">
+                        <a href="" class="modal-container-1-item-link">
+                            <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/package-6-150x150.jpg" alt="" class="modal-container-img">
+                            <div class="modal-container-1-info">
+                                <div class="modal-container-1-info-heading">Hong Kong</div>
+                                <div class="modal-container-1-info-body">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="modal-container-1-info-body-label">Asia</div>
+                                </div>
+                                <button class="modal-container-1-info-btn-2">FROM 500 $</button>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="modal-container-1-item">
+                        <a href="" class="modal-container-1-item-link">
+                            <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-2-150x150.jpg" alt="" class="modal-container-img">
+                            <div class="modal-container-1-info">
+                                <div class="modal-container-1-info-heading">San Francisco</div>
+                                <div class="modal-container-1-info-body">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div class="modal-container-1-info-body-label">United States</div>
+                                </div>
+                                <button class="modal-container-1-info-btn-3">FROM 400 $</button>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="modal-container-2">
+                <img src="https://www.travelagewest.com/uploadedImages/All_Gateways/River_Cruise/Features/RiverCruisingRestart_Hero_TAW032221.jpg?width=1008&height=567&scale=both&mode=crop" alt="" class="modal-container-2-img">
+                <div class="modal-container-2-text">
+                    <div class="modal-container-2-text-heading">Europe</div>
+                    <div class="modal-container-2-text-body">3 PACKAGES</div>
+                </div>
+                <div class="layer">
+                    <div class="layer__heading">
+                        <p class="layer__heading-text">Packages</p> 
+                    </div>
+                    <div class="layer__body">
+                        <div class="layer__body-content">
+                            <div class="layer__body-content-text">Berlin</div>
+                            <div class="layer__body-content-text">Amsterdam</div>
+                            <div class="layer__body-content-text">Tuscany</div>
+                        </div>
+                        <button class="layer__body-btn">
+                            VIEW DESTINATION
+                        </button>
+                    </div>
+                </div>
+
+               
+            </div>
+
+            <div class="modal-container-3">
+                <header class="modal-container-3-header">
+                    <div class="modal-header__heading modal-container-3-header__heading">LAST</div>
+                    <div class="modal-header__content modal-container-3-header__content">
+                        MINUTES
+                    </div>
+                    <div class="modal-header__content--underline modal-container-3-header__content--underline"></div>
+                </header>
+                <div class="modal-container-3-body">
+                    <ul class="modal-container-1-list modal-container-3-body-list">
+                        <li class="modal-container-1-item modal-container-3-body-item">
+                            <a href="" class="modal-container-1-item-link modal-container-3-body-item-link">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/03/package-5-150x150.jpg" alt="" class="modal-container-img">
+                                <div class="modal-container-1-info">
+                                    <div class="modal-container-1-info-heading">Tuscany</div>
+                                    <div class="modal-container-1-info-body">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="modal-container-1-info-body-label">Italy</div>
+                                    </div>
+                                    <button class="modal-container-1-info-btn-1 modal-container-3-btn-1">FROM 730 $</button>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="modal-container-1-item modal-container-3-body-item">
+                            <a href="" class="modal-container-1-item-link modal-container-3-body-item-link">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-4-150x150.jpg" alt="" class="modal-container-img">
+                                <div class="modal-container-1-info">
+                                    <div class="modal-container-1-info-heading">Amsterdam</div>
+                                    <div class="modal-container-1-info-body">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="modal-container-1-info-body-label">Netherlands</div>
+                                    </div>
+                                    <button class="modal-container-1-info-btn-1 modal-container-3-btn-2">FROM 1500 $</button>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="modal-container-1-item modal-container-3-body-item">
+                            <a href="" class="modal-container-1-item-link modal-container-3-body-item-link">
+                                <img src="http://www.nicdarkthemes.com/themes/travel/wp/demo/love-travel/wp-content/uploads/sites/3/2018/11/package-3-150x150.jpg" alt="" class="modal-container-img">
+                                <div class="modal-container-1-info">
+                                    <div class="modal-container-1-info-heading">Phuket</div>
+                                    <div class="modal-container-1-info-body">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="modal-container-1-info-body-label">Thailandia</div>
+                                    </div>
+                                    <button class="modal-container-1-info-btn-1 modal-container-3-btn-3">FROM 1200 $</button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const deleteButton = document.querySelector('.modal__button--delete');
+        const modal = document.querySelector('.modal');
+        const list = document.querySelector('.header__bars');
+
+        function openModal(){
+            modal.classList.add('open');
+        }
+
+        function hideModal(){
+            modal.classList.remove('open')
+        }
+
+        list.addEventListener('click', openModal);
+        deleteButton.addEventListener('click', hideModal);
+    </script>
+</body>

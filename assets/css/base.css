@@ -1,0 +1,377 @@
+:root{
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #333;
+    --border-color: #e4e4e4;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%; 
+    /* Kĩ thuật HACK 100% là 16px => 62.5% là 10px */
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+/* RESPONSIVE */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid__full-width{
+    width: 100%;
+}
+
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__column-3{
+    width: 30%;
+}
+
+.app{
+    position: relative;
+}
+
+/* MODAL */
+.modal{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 350px;
+    background-color: var(--white-color);
+    height: 100vh;
+    z-index: 3;
+    overflow: scroll;
+    padding-left: 30px;
+    position: fixed;
+    display: none;
+    animation: open ease 1s;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: center;
+}
+
+.modal-header__heading{
+    position: absolute;
+    top: 30px;
+    color: #a0a2a0;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+}
+
+.modal-header__content{
+    position: absolute;
+    top: 55px;
+    color: #555555;
+    font-size: 2.3rem;
+    letter-spacing: 2px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    z-index: 1;
+}
+
+.modal-header__content--underline{
+    position: relative;
+    top: 70px;
+    width: 128px;
+    height: 5px;
+    background-color: #ffd105;
+}
+
+.modal__button--delete{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: var(--white-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #b9b9b9;
+    cursor: pointer;
+}
+
+.modal__button--delete i{
+    color: #a7a7a7;
+    font-size: 1.4rem;
+}
+
+.modal-container-1-list{
+    position: absolute;
+    top: 105px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.modal-container-1-item{
+    padding: 15px 0;
+}
+
+.modal-container-1-item-link{
+    display: flex;
+    text-decoration: none;
+}
+
+.modal-container-img{
+    width: 100px;
+}
+
+.modal-container-1-info{
+    padding-left: 30px;
+}
+
+.modal-container-1-info-body{
+    display: flex;
+}
+
+.modal-container-1-info-body i{
+    padding-right: 7px;
+    font-size: 1.6rem;
+    color: #c8c8c8;
+}
+
+.modal-container-1-info-heading{
+    padding: 4px 0;
+    font-size: 2rem;
+    color: #555555;
+}
+
+.modal-container-1-info-body-label{
+    font-size: 1.5rem;
+    color: #9a9da0;
+    letter-spacing: 3px;
+}
+
+.modal-container-1-info-btn-1{
+    margin-top: 20px;
+    width: 135px;
+    height: 30px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right , #ffcd05 , #ffa006);
+    border: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container-1-info-btn-2{
+    margin-top: 20px;
+    width: 135px;
+    height: 30px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right , #f76770 , #f78b66);
+    border: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container-1-info-btn-3{
+    margin-top: 20px;
+    width: 135px;
+    height: 30px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right , #bc71d4 , #d97280);
+    border: none;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container-2{
+    position: relative;
+    top: 520px;
+}
+
+.modal-container-2-img{
+    width: 280px;
+    position: absolute;
+    top: 10px;
+    height: 250px;
+}
+
+.modal-container-2-text-heading{
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    z-index: 1;
+    font-size: 2.2rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.modal-container-2-text-body{
+    position: absolute;
+    top: 210px;
+    left: 30px;
+    z-index: 1;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.layer{
+    position: absolute;
+    top: 10px;
+    width: 280px;
+    height: 250px;
+    background-color: #14b9d5;
+    z-index: 2;
+    animation: growth linear 0.5s;
+    display: none;
+   
+}
+
+.modal-container-2:hover .layer{
+    display: block;
+}
+
+.layer__heading{
+    position: absolute;
+    top: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--white-color);
+    width: 100%;
+}
+
+.layer__heading-text{
+    text-align: center;
+}
+
+.layer__body{
+    width: 100%;
+    position: absolute;
+    top: 90px;
+    display: flex;
+    justify-content: center;
+}
+
+.layer__body-content-text{
+    text-align: center;
+    padding: 6px 0;
+    font-size: 1.5rem;
+    color: var(--white-color);
+    letter-spacing: 2px;
+}
+
+.layer__body-btn{
+    position: absolute;
+    top: 100px;
+    padding: 8px;
+    border-radius: 50px;
+    width: 180px;
+    font-size: 1.3rem;
+    background-color: var(--white-color);
+    color: #14b9d5;
+    letter-spacing: 1px;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes growth {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+.modal-container-3{
+    position: relative;
+    width: calc(100% - 15px);
+    top: 800px;
+    height: 500px;
+   
+}
+
+.modal-container-3-header{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-container-3-header__content--underline{
+    width: 110px;
+    background-color: #f3a46b;
+}
+
+.modal-container-3-body{
+    position: absolute;
+}
+
+.modal-container-3-btn-1{
+    background-image: linear-gradient(to right , #1bbc97 , #1bbc67);
+}
+
+.modal-container-3-btn-2{
+    background-image: linear-gradient(to right , #f3a76b , #f3c66b);
+}
+
+.modal-container-3-btn-3{
+    background-image: linear-gradient(to right , #14bcd3 , #14d3b3);
+}
+
+/* Đóng / Mở modal */
+@keyframes open {
+    from{
+        width: 0;
+    }
+    to{
+       width: 350px;
+    }
+}
+
+@keyframes hide {
+    from{
+        width: 350px;
+        display: block;
+    }
+    to{
+        width: 0;
+        display: none;
+    }
+}
+
+
+.open{
+    display: block;
+}
+
+.hide{
+    animation: hide ease 1s;
+}
